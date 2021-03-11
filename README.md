@@ -1,78 +1,75 @@
-# With Expo
+# reactnative-nextjs-template
 
-[![supports iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff)](https://itunes.apple.com/app/apple-store/id982107779)
-[![supports Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www)
-[![supports web](https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff)](https://docs.expo.io/workflow/web/)
+**Build native and web apps from same codebase with React Native/Expo and Next.js**
 
-This is a starter project for creating universal React apps with Next.js and Expo.
+(Created with `npx create-next-app -e with-expo [PROJECTNAME]`)
 
-> 💡 For the most updated info, see the [Expo + Next.js Docs](https://docs.expo.io/guides/using-nextjs/)!
+![reactnative-nextjs-template demo on phone](docs/github_preview.jpg)
 
-![iOS, Android, and web running with Expo and Next.js](./public/demo.png)
+_Note: this is my v5 boilerplate for React apps. See also my [Next.js + Firebase boilerplate](https://github.com/tomsoderlund/nextjs-pwa-firebase-boilerplate)._
 
-- Next.js cannot be used for SSR in your native app.
-- The native bundle is built using the [Metro bundler](https://facebook.github.io/metro/) and may not have the same level of optimization as the web bundle which is compiled using the Next.js Webpack configuration.
-- Expo transpiles `react-native-web` packages by default to enable the use of `react-native` in a browser or Node.js environment.
-- All [Expo packages](https://docs.expo.io/versions/latest/) work in the browser. If you experience issues using them in a Node environment, please report them here: [Expo issues](https://github.com/expo/expo/issues).
-- Most community `react-native-*` packages do not support web, please refer to [reactnative.directory](https://reactnative.directory/?web=true) for a list of web compatible packages.
-- Eject the `pages/_document` component by running `yarn next-expo customize`.
-- To use fonts and images, see [the Expo docs](https://docs.expo.io/guides/using-nextjs/#image-support).
+## Support this project
 
-## Deploy your own
+Did you or your company find `reactnative-nextjs-template` useful? Please consider giving a small donation, it helps me spend more time on open-source projects:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) (web only):
+[![Support Tom on Ko-Fi.com](https://www.tomsoderlund.com/ko-fi_tomsoderlund_50.png)](https://ko-fi.com/tomsoderlund)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-expo&project-name=with-expo&repository-name=with-expo)
+## Why is this awesome?
 
-Deploy the native app to the App store and Play store using [Expo deployment](https://docs.expo.io/distribution/app-stores/).
+This allows you to build _both_ a native app for iOS/Android/etc, as well as an SEO-optimized web app _from same codebase_.
+
+## Demo
+
+See [**reactnative-nextjs-template** running on Vercel here](https://reactnative-nextjs-template.vercel.app/).
+
+![reactnative-nextjs-template demo on phone](docs/demo.jpg)
+
+## Deploying
+
+Setup and deploy your own project using this template with [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Ftomsoderlund%2Freactnative-nextjs-template&env=NEXT_PUBLIC_FIREBASE_API_KEY&envDescription=Enter%20your%20public%20Firebase%20API%20Key&envLink=https://github.com/tomsoderlund/reactnative-nextjs-template#deploying-with-vercel)
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+> Note: If you set up your project using the Deploy button above, you only need to clone your own repo instead of this repository.
 
-```bash
-npx create-next-app --example with-expo with-expo-app
-# or
-yarn create next-app --example with-expo with-expo-app
-```
+Clone this repository:
 
-### Running web
+    git clone https://github.com/tomsoderlund/reactnative-nextjs-template.git [MY_APP]
 
-> 🚨 Using default Expo web with Next.js is not supported.
+Remove the .git folder since you want to create a new repository
 
-- Start the Next.js project with `yarn dev` (`yarn next dev`).
+    rm -rf .git
 
-Deploy the web app to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Install dependencies:
 
-### Running native
+    cd [MY_APP]
+    yarn  # or npm install
 
-- Install the Expo CLI `npm i -g expo-cli`.
-- Start the Metro bundler with `yarn ios` or `yarn android` -- This runs `expo start` with the Expo CLI.
-- You can run the mobile app using the [Expo client app](https://expo.io/tools), or by running `yarn eject` and building the project manually (this requires a macbook for iOS).
+Start it by doing the following:
 
-Deploy the native app to the App store and Play store using [Expo deployment](https://docs.expo.io/distribution/app-stores/).
+    yarn dev
 
-## Troubleshooting
+…then navigate to `http://localhost:3005/`
 
-You may find that certain packages like `@ui-kitten/components` do not work in the browser. This is because they need to be transpiled by Next.js, you can fix this by doing the following:
+Start Expo for native apps:
 
-- Install the following:
+	expo start
 
-```sh
-yarn add -D next-compose-plugins next-transpile-modules
-```
+In production:
 
-- Modify the Next.js config `next.config.js`:
+    yarn build
+    yarn start
 
-```js
-const { withExpo } = require('@expo/next-adapter')
-const withPlugins = require('next-compose-plugins')
-const withTM = require('next-transpile-modules')([
-  // Add the name of your package here...
-  '@ui-kitten/components',
-])
+## Modifying the app to your needs
 
-module.exports = withPlugins([withTM, [withExpo, { projectRoot: __dirname }]], {
-  // ...
-})
-```
+### Change app name
+
+Do search/replace for “reactnative-nextjs-template” to something else.
+
+Change name in `public/manifest.json`
+
+### Change port number
+
+Do search/replace for “3005” to something else.
