@@ -1,5 +1,7 @@
 # reactnative-nextjs-template
 
+> NOTE: Work in progress until version is 1.0.0+
+
 **Build native and web apps from same codebase with React Native/Expo and Next.js**
 
 (Created with `npx create-next-app -e with-expo [PROJECTNAME]`)
