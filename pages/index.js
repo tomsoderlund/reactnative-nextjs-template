@@ -4,11 +4,14 @@ import { StyleSheet, Text, View } from 'react-native'
 
 import { H1 } from '../components/webElements'
 
+import { config } from '../config/config'
+
 export default function App () {
   return (
     <View style={styles.container}>
       <H1 style={styles.h1}>Heading H1</H1>
-      <Text style={styles.text}>This is reactnative-nextjs-template running!</Text>
+      <Text style={styles.text}>This is {config.appName} running.</Text>
+      <Text style={styles.text}>{config.appTagline}</Text>
     </View>
   )
 }
@@ -20,7 +23,9 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   text: {
-    fontSize: 16
+    fontSize: 16,
+    marginTop: 8,
+    marginBottom: 8
   },
   h1: {
     fontSize: 24,
