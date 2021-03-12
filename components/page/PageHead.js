@@ -1,6 +1,6 @@
 import React from 'react'
 import { Platform } from 'react-native'
-import MetaTags from 'react-meta-tags'
+import Head from 'next/head'
 
 // import manifest from 'public/manifest.json'
 import { config } from '../../config/config'
@@ -24,7 +24,7 @@ const PageHead = ({ title, description, path = '/' }) => {
   const iconUrl = '/favicon.png'
 
   return (
-    <MetaTags>
+    <Head>
       <title>{pageTitle}</title>
       <meta name='description' content={pageDescription} />
 
@@ -69,7 +69,7 @@ const PageHead = ({ title, description, path = '/' }) => {
 
       {config.googleSiteVerification ? <meta name='google-site-verification' content={config.googleSiteVerification} /> : null}
 
-    </MetaTags>
+    </Head>
   )
 }
 export default PageHead
