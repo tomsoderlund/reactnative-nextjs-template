@@ -18,7 +18,14 @@ Did you or your company find `reactnative-nextjs-template` useful? Please consid
 
 ## Why is this awesome?
 
-This allows you to build _both_ a native app for iOS/Android/etc, as well as an SEO-optimized web app _from same codebase_.
+This allows you to build _both_ a native app for [iOS/Android/Windows/macOS/etc](https://reactnative.dev/docs/out-of-tree-platforms), as well as an SEO-optimized web app _from same codebase_.
+
+- [X] Server-side rendering (SSR)
+- [X] SEO: Semantic tags e.g. H1, H2, H3
+- [ ] SEO: Page metadata support
+- [ ] Navigation
+- [ ] Flexible CSS solution
+- [ ] Font support
 
 ## Demo
 
