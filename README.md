@@ -27,6 +27,7 @@ This allows you to build _both_ a native app for [iOS/Android/Windows/macOS/etc]
 - [ ] Flexible CSS solution
 - [ ] Font support
 - [ ] SVG support
+- [X] Video player
 
 ## Demo
 

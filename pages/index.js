@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 
 import PageHead from '../components/page/PageHead'
 import { H1 } from '../components/webElements'
+import VideoPlayer from '../components/VideoPlayer'
 
 import { config } from '../config/config'
 
@@ -14,6 +15,7 @@ export default function App () {
       <H1 style={styles.h1}>Heading H1</H1>
       <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
+      <VideoPlayer />
     </View>
   )
 }
