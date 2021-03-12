@@ -1,5 +1,5 @@
 const packageJson = require('../package.json')
-// const manifest = require('public/manifest.json')
+const manifest = require('../public/manifest.json')
 
 const serverPort = process.env.PORT || 3005
 
@@ -10,9 +10,9 @@ const completeConfig = {
     appSlug: packageJson.name,
     appVersion: packageJson.version,
     appUrl: process.env.NEXT_PUBLIC_APP_URL,
-    appName: packageJson.name,
-    appTagline: packageJson.description,
-    appDescription: packageJson.description,
+    appName: manifest.name,
+    appTagline: manifest.description,
+    appDescription: manifest.description,
     locale: 'en_US', // sv_SE
     googleAnalyticsId: 'UA-XXXXXXX-X',
     googleSiteVerification: false

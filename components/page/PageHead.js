@@ -2,10 +2,9 @@ import React from 'react'
 import { Platform } from 'react-native'
 import Head from 'next/head'
 
-// import manifest from 'public/manifest.json'
+import manifest from '../../public/manifest.json'
 import { config } from '../../config/config'
 
-const manifest = {}
 const isDevelopment = () => true
 
 const PageHead = ({ title, description, path = '/' }) => {
