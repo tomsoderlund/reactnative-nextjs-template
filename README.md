@@ -26,6 +26,7 @@ This allows you to build _both_ a native app for [iOS/Android/Windows/macOS/etc]
 - [ ] Navigation
 - [ ] Flexible CSS solution
 - [ ] Font support
+- [ ] SVG support
 
 ## Demo
 
