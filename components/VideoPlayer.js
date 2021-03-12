@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import { StyleSheet, View, Button } from 'react-native'
 import { Video } from 'expo-av'
 
-const VideoPlayer = () => {
+const VideoPlayer = ({ videoUrl }) => {
   const video = useRef(null)
   const [status, setStatus] = useState({})
   return (
@@ -10,9 +10,7 @@ const VideoPlayer = () => {
       <Video
         ref={video}
         style={styles.extraMargin}
-        source={{
-          uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4'
-        }}
+        source={{ uri: videoUrl }}
         useNativeControls
         resizeMode='contain'
         isLooping

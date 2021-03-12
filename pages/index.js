@@ -15,7 +15,9 @@ export default function App () {
       <H1 style={styles.h1}>Heading H1</H1>
       <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
-      <VideoPlayer />
+      <VideoPlayer
+        videoUrl='https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4'
+      />
     </View>
   )
 }
