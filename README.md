@@ -22,7 +22,7 @@ This allows you to build _both_ a native app for [iOS/Android/Windows/macOS/etc]
 
 - [X] Server-side rendering (SSR)
 - [X] SEO: Semantic tags e.g. H1, H2, H3
-- [ ] SEO: Page metadata support
+- [X] SEO: Page metadata support
 - [ ] Navigation
 - [ ] Flexible CSS solution
 - [ ] Font support

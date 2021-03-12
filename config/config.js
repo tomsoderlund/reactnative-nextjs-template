@@ -12,7 +12,7 @@ const completeConfig = {
     appUrl: process.env.NEXT_PUBLIC_APP_URL,
     appName: packageJson.name,
     appTagline: packageJson.description,
-    appDescription: `${packageJson.name} – ${packageJson.description}`,
+    appDescription: packageJson.description,
     locale: 'en_US', // sv_SE
     googleAnalyticsId: 'UA-XXXXXXX-X',
     googleSiteVerification: false
