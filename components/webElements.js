@@ -10,7 +10,7 @@ export const Heading = (props) => {
   return (
     <Text
       {...otherProps}
-      accessibilityRole='heading'
+      accessibilityRole='header'
       aria-level={level}
     >
       {children}
