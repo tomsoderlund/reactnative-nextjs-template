@@ -1,8 +1,8 @@
 import React from 'react'
 // @generated: @expo/next-adapter@2.1.5
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text } from 'react-native'
 
-import PageHead from '../components/page/PageHead'
+import Page from '../components/page/Page'
 import { H1 } from '../components/webElements'
 import VideoPlayer from '../components/VideoPlayer'
 
@@ -10,24 +10,18 @@ import { config } from '../config/config'
 
 export default function App () {
   return (
-    <View style={styles.container}>
-      <PageHead />
+    <Page>
       <H1 style={styles.h1}>Heading H1</H1>
       <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
       <VideoPlayer
         videoUrl='https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4'
       />
-    </View>
+    </Page>
   )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
   text: {
     fontSize: 16,
     marginTop: 8,
