@@ -3,9 +3,11 @@ import { StyleSheet, View } from 'react-native'
 import { Header } from 'react-native-elements'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
+import { config } from '../../config/config'
+
 import PageHead from './PageHead'
 
-const Page = ({ title, description, children }) => {
+const Page = ({ title = config.appName, description, children }) => {
   return (
     <SafeAreaProvider>
       <PageHead
@@ -14,7 +16,7 @@ const Page = ({ title, description, children }) => {
       />
       <Header
         leftComponent={{ icon: 'menu', color: '#fff' }}
-        centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
+        centerComponent={{ text: title, style: { color: '#fff' } }}
         rightComponent={{ icon: 'home', color: '#fff' }}
       />
       <View style={styles.container}>
