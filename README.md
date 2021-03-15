@@ -2,7 +2,7 @@
 
 > NOTE: Work in progress until version is 1.0.0+
 
-**Build native (iOS/Android/Windows/macOS) and an SEO-optimized web app from the same React codebase, using React Native/Expo and Next.js**
+**Build native apps (iOS/Android/Windows/macOS) and an SEO-optimized web app from the same React codebase, using React Native/Expo and Next.js**
 
 (Created with `npx create-next-app -e with-expo [PROJECTNAME]`)
 

@@ -1,7 +1,7 @@
 {
   "name": "React Native Next.js",
   "short_name": "RN-N",
-  "description": "Build native (iOS/Android/Windows/macOS) and an SEO-optimized web app from the same React codebase",
+  "description": "Build native apps (iOS/Android/Windows/macOS) and an SEO-optimized web app from the same React codebase",
   "theme_color": "#663399",
   "background_color": "#663399",
   "icons": [
