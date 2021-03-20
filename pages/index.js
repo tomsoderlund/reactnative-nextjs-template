@@ -8,7 +8,7 @@ import VideoPlayer from '../components/VideoPlayer'
 
 import { config } from '../config/config'
 
-export default function App () {
+export default function StartPage () {
   return (
     <Page>
       <H1 style={styles.h1}>Heading H1</H1>
