@@ -6,10 +6,12 @@
   "license": "ISC",
   "scripts": {
     "dev": "next dev -p 3005",
+    "dev-expo": "expo start",
     "build": "next build",
     "start": "next start",
     "android": "expo start --android",
     "ios": "expo start --ios",
+    "web-expo": "expo start --web",
     "web": "next",
     "eject-next": "next-expo customize",
     "eject": "expo eject",
