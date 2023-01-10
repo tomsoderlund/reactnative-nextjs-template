@@ -19,18 +19,19 @@
     "fix": "standard --fix"
   },
   "dependencies": {
-    "expo": "^40.0.0",
-    "expo-av": "~8.7.0",
-    "next": "latest",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
-    "react-native-elements": "^3.3.1",
-    "react-native-safe-area-context": "3.1.9",
-    "react-native-vector-icons": "^8.1.0",
-    "react-native-web": "~0.13.12"
+    "expo": "^47.0.0",
+    "expo-av": "^13.0.2",
+    "next": "~13.1.1",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-elements": "^3.4.3",
+    "react-native-safe-area-context": "^4.4.1",
+    "react-native-vector-icons": "^9.2.0",
+    "react-native-web": "~0.18.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.3",
     "@expo/next-adapter": "^5.0.0",
     "standard": "^16.0.3"
   }

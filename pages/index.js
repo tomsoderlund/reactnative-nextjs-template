@@ -1,5 +1,4 @@
 import React from 'react'
-// @generated: @expo/next-adapter@2.1.5
 import { StyleSheet, Text } from 'react-native'
 
 import Page from '../components/page/Page'
