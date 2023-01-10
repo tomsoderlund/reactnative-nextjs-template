@@ -59,7 +59,7 @@ Install dependencies:
     cd [MY_APP]
     yarn  # or npm install
 
-Start it by doing the following:
+Start it in Next.js/web mode by:
 
     yarn dev
 
@@ -67,7 +67,7 @@ Start it by doing the following:
 
 Start Expo for native apps:
 
-	expo start
+	yarn dev:native
 
 In production:
 
@@ -88,6 +88,6 @@ Do search/replace for “3005” to something else.
 
 ## Read more
 
-- Expo: https://docs.expo.dev/guides/using-nextjs/
-- Expo repo: https://github.com/expo/examples/tree/master/with-nextjs
+- Expo’s guide: https://docs.expo.dev/guides/using-nextjs/
+- Expo’s Next.js code example: https://github.com/expo/examples/tree/master/with-nextjs
 - Solito framework: https://solito.dev/ (awesome but uses it’s own components/syntax)
