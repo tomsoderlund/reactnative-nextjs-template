@@ -1,20 +1,20 @@
 {
   "name": "reactnative-nextjs-template",
   "description": "Build native apps (iOS/Android/Windows/macOS) and an SEO-optimized web app from the same React codebase",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Tom Söderlund <tom@tomsoderlund.com>",
   "license": "ISC",
   "scripts": {
     "dev": "next dev -p 3005",
-    "dev-expo": "expo start",
+    "dev:native": "expo start --port 19005",
     "build": "next build",
     "start": "next start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web-expo": "expo start --web",
+    "dev:android": "expo start --android",
+    "dev:ios": "expo start --ios",
     "web": "next",
-    "eject-next": "next-expo customize",
-    "eject": "expo eject",
+    "web:native": "expo start --web",
+    "eject:web": "next-expo customize",
+    "eject:native": "expo eject",
     "lint": "standard",
     "fix": "standard --fix"
   },
@@ -25,9 +25,6 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
-    "react-native-elements": "^3.4.3",
-    "react-native-safe-area-context": "^4.4.1",
-    "react-native-vector-icons": "^9.2.0",
     "react-native-web": "~0.18.7"
   },
   "devDependencies": {
