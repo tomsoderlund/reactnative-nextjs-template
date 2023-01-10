@@ -31,7 +31,7 @@
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
-    "@expo/next-adapter": "2.1.5",
+    "@expo/next-adapter": "^5.0.0",
     "standard": "^16.0.3"
   }
 }
