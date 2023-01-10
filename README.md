@@ -85,3 +85,9 @@ Change name in `public/manifest.json`
 ### Change port number
 
 Do search/replace for “3005” to something else.
+
+## Read more
+
+- Expo: https://docs.expo.dev/guides/using-nextjs/
+- Expo repo: https://github.com/expo/examples/tree/master/with-nextjs
+- Solito framework: https://solito.dev/ (awesome but uses it’s own components/syntax)
