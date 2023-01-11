@@ -89,5 +89,6 @@ Do search/replace for “3005” to something else.
 ## Read more
 
 - Expo’s guide: https://docs.expo.dev/guides/using-nextjs/
-- Expo’s Next.js code example: https://github.com/expo/examples/tree/master/with-nextjs
+    - [@expo/next-adapter](https://github.com/expo/expo-cli/tree/main/packages/next-adapter)
+    - Code example: https://github.com/expo/examples/tree/master/with-nextjs
 - Solito framework: https://solito.dev/ (awesome but uses it’s own components/syntax)
