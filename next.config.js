@@ -6,8 +6,11 @@ const nextConfig = {
   swcMinify: true,
   transpilePackages: [
     'react-native',
-    'expo'
+    'expo',
     // Add more React Native / Expo packages here...
+    'react-native-elements',
+    'react-native-safe-area-context',
+    'react-native-vector-icons'
   ],
   experimental: {
     forceSwcTransforms: true
