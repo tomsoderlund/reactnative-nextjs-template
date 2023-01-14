@@ -1,3 +1,6 @@
+/*
+  This component is used to wrap all pages, similar to _app.js in Next.js but cross-platform.
+*/
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 // import { Header } from 'react-native-elements'
