@@ -24,7 +24,7 @@ const Page = ({ title = config.appName, description, children }) => {
         rightComponent={{ icon: 'home', color: '#fff' }}
       />
        */}
-      <View style={styles.container}>
+      <View style={styles.pageContainer}>
         {children}
       </View>
     </>
@@ -33,9 +33,10 @@ const Page = ({ title = config.appName, description, children }) => {
 export default Page
 
 const styles = StyleSheet.create({
-  container: {
+  pageContainer: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    padding: 16
   }
 })
