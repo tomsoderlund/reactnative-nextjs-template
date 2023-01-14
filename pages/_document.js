@@ -2,6 +2,8 @@ import { Children } from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { AppRegistry } from 'react-native-web'
 
+import { config } from '../config/config'
+
 // Follows the setup for react-native-web:
 // https://necolas.github.io/react-native-web/docs/setup/#root-element
 // Plus additional React Native scroll and text parity styles for various
@@ -49,7 +51,9 @@ export default class MyDocument extends Document {
   render () {
     return (
       <Html style={{ height: '100%' }}>
-        <Head />
+        <Head>
+          <link rel='stylesheet' href={`https://fonts.googleapis.com/css2?${config.fonts.map(([fontName, fontWeight]) => `family=${`${fontName.replace(/ /g, '+')}${fontWeight ? ':' + fontWeight : ''}`}`).join('&')}&display=swap`} />
+        </Head>
         <body style={{ height: '100%', overflow: 'hidden' }}>
           <Main />
           <NextScript />
