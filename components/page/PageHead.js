@@ -7,7 +7,7 @@ import { config } from '../../config/config'
 
 const isDevelopment = () => true
 
-const PageHead = ({ title, description, path = '/' }) => {
+const PageHead = ({ title, description, imageUrl, iconUrl = '/favicon.png', path = '/' }) => {
   if (Platform.OS !== 'web') return null
 
   const pageTitle = title
@@ -17,10 +17,9 @@ const PageHead = ({ title, description, path = '/' }) => {
   const pageDescription = description || config.appDescription
 
   // SEO: title 60 characters, description 160 characters
-  if (isDevelopment()) console.log('PageHead (dev):', [60 - pageTitle.length, 160 - pageDescription.length, pageTitle, pageDescription])
+  if (isDevelopment()) console.log(`PageHead (dev):\n• title (${60 - pageTitle.length}): “${pageTitle}”\n• description (${160 - pageDescription.length}): “${pageDescription}”`)
 
-  const thumbnailUrl = undefined // `https://screens.myscreenshooterserver.com/?url=${config.appUrl}${path.slice(1)}${(path.includes('?') ? '&' : '?')}thumbnail=true`
-  const iconUrl = '/favicon.png'
+  const thumbnailUrl = imageUrl // ?? `https://screens.myscreenshooterserver.com/?url=${config.appUrl}${path.slice(1)}${(path.includes('?') ? '&' : '?')}thumbnail=true`
 
   return (
     <Head>
