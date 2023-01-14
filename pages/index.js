@@ -7,12 +7,13 @@ import { H1 } from '../components/webElements'
 
 import { config } from '../config/config'
 
-export default function StartPage () {
+export default function StartPage ({ serverValue }) {
   return (
     <Page>
       <H1 style={styles.h1}>Heading H1</H1>
       <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
+      <Text style={styles.text}>serverValue (Next.js getStaticProps): {serverValue}</Text>
     </Page>
   )
 }
@@ -30,3 +31,12 @@ const styles = StyleSheet.create({
     marginBottom: 12
   }
 })
+
+export async function getStaticProps ({ params, locale = 'en' }) {
+  return {
+    props: {
+      serverValue: 12345
+    },
+    revalidate: 10 * 60 // Refresh page every 10 minutes
+  }
+}
