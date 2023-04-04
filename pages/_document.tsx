@@ -34,7 +34,7 @@ body {
 `
 
 export default class MyDocument extends Document {
-  static async getInitialProps ({ renderPage }) {
+  static async getInitialProps ({ renderPage }): Promise<any> {
     AppRegistry.registerComponent('main', () => Main)
     const { getStyleElement } = AppRegistry.getApplication('main')
     const page = await renderPage()
@@ -48,11 +48,11 @@ export default class MyDocument extends Document {
     return { ...page, styles: Children.toArray(styles) }
   }
 
-  render () {
+  render (): React.ReactElement {
     return (
       <Html style={{ height: '100%' }}>
         <Head>
-          <link rel='stylesheet' href={`https://fonts.googleapis.com/css2?${config.fonts.map(([fontName, fontWeight]) => `family=${`${fontName.replace(/ /g, '+')}${fontWeight ? ':' + fontWeight : ''}`}`).join('&')}&display=swap`} />
+          <link rel='stylesheet' href={`https://fonts.googleapis.com/css2?${config.fonts.map(([fontName, fontWeight]) => `family=${`${fontName.replace(/ /g, '+')}${fontWeight !== undefined ? ':' + fontWeight : ''}`}`).join('&')}&display=swap`} />
         </Head>
         <body style={{ height: '100%', overflow: 'hidden' }}>
           <Main />
