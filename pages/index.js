@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text } from 'react-native'
 
-import Page from '../components/page/Page'
 import { H1 } from '../components/webElements'
 // import VideoPlayer from '../components/VideoPlayer'
 
@@ -9,12 +8,12 @@ import { config } from '../config/config'
 
 export default function StartPage ({ serverValue }) {
   return (
-    <Page>
+    <>
       <H1 style={styles.h1}>Heading H1</H1>
       <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
       <Text style={styles.text}>serverValue (Next.js getStaticProps): {serverValue}</Text>
-    </Page>
+    </>
   )
 }
 
