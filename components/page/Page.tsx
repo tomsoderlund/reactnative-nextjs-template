@@ -7,6 +7,7 @@ import { StyleSheet, View } from 'react-native'
 // import { SafeAreaProvider } from 'react-native-safe-area-context'
 
 import { config } from '../../config/config'
+import { SIDE_MARGIN } from '../../config/globalStyles'
 
 import PageHead from './PageHead'
 
@@ -43,6 +44,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 16
+    padding: SIDE_MARGIN
   }
 })
