@@ -47,6 +47,13 @@ export const COLOR_INPUT_BACKGROUND = COLOR_GRAY_07
 // ----- Typography -----
 
 export const GLOBAL_STYLES = StyleSheet.create({
+  PAGE_CONTAINER: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: SIDE_MARGIN
+  },
+
   SPACING_FULL: {
     marginVertical: STANDARD_UNIT
   },
