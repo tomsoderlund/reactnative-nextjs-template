@@ -10,7 +10,13 @@ import { config } from '../../config/config'
 
 import PageHead from './PageHead'
 
-const Page = ({ title = config.appName, description, children }) => {
+interface PageProps {
+  title?: string
+  description?: string
+  children: React.ReactNode
+}
+
+const Page = ({ title = config.appName, description, children }: PageProps): React.ReactElement => {
   return (
     <>
       <PageHead
