@@ -11,9 +11,7 @@ import { GLOBAL_STYLES } from '../../config/globalStyles'
 
 import PageHead from './PageHead'
 
-interface PageProps {
-  title?: string
-  description?: string
+interface PageProps extends PageMetaProps {
   children: React.ReactNode
 }
 

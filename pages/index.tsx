@@ -11,7 +11,7 @@ import { config } from '../config/config'
 interface StartPageParams extends ParsedUrlQuery {
 }
 
-interface StartPageProps {
+interface StartPageProps extends PageMetaProps {
   serverValue: number
 }
 

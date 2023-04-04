@@ -11,3 +11,11 @@ declare module '*.svg' {
 }
 
 // ----- Other data types -----
+
+interface PageMetaProps {
+  title?: string
+  description?: string
+  imageUrl?: string
+  iconUrl?: string
+  path?: string
+}

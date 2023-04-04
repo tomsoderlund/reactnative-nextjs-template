@@ -8,7 +8,7 @@ import { config } from '../config/config'
 
 import PageHead from '../components/page/PageHead'
 
-export default function JustAWebPage ({ title = config.appName, description }): React.ReactElement {
+export default function JustAWebPage ({ title = config.appName, description }: PageMetaProps): React.ReactElement {
   return (
     <>
       <PageHead

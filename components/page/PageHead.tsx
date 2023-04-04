@@ -8,15 +8,7 @@ import useI18N from '../../hooks/useI18N'
 
 const isDevelopment = (): boolean => true
 
-interface PageHeadProps {
-  title?: string
-  description?: string
-  imageUrl?: string
-  iconUrl?: string
-  path?: string
-}
-
-const PageHead = ({ title, description, imageUrl, iconUrl = '/favicon.png', path = '/' }: PageHeadProps): React.ReactElement | null => {
+const PageHead = ({ title, description, imageUrl, iconUrl = '/favicon.png', path = '/' }: PageMetaProps): React.ReactElement | null => {
   if (Platform.OS !== 'web') return null
   const { t } = useI18N()
 
