@@ -27,7 +27,7 @@
       "permissions": [
       ],
       "adaptiveIcon": {
-        "foregroundImage": "./public/adaptive-icon.png",
+        "foregroundImage": "./public/app-icon-adaptive.png",
         "backgroundColor": "#ffffff"
       }
     },
