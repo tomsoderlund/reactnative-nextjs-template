@@ -1308,6 +1308,11 @@
     resolve-from "^5.0.0"
     sucrase "^3.20.0"
 
+"@expo/next-adapter@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@expo/next-adapter/-/next-adapter-5.0.2.tgz#128906feeb3ed1af3b88dd1780edf6de57180388"
+  integrity sha512-xo95f1U96HwcIyp1+X9NRS/48Sfh7fZsgKWJgV11uGo7amLInpu0wqf/mi6Wto3qC7BLMXghqCD0h16CjCP3gg==
+
 "@expo/osascript@2.0.33", "@expo/osascript@^2.0.31":
   version "2.0.33"
   resolved "https://registry.yarnpkg.com/@expo/osascript/-/osascript-2.0.33.tgz#e9dcc8da54466c11939074aa71a006024ea884b1"
