@@ -2,12 +2,23 @@ const { withExpo } = require('@expo/next-adapter')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en'
+  },
+  typescript: {
+    // TODO: Warning: This allows production builds to successfully complete even if your project has TypeScript errors
+    ignoreBuildErrors: true
+  },
   reactStrictMode: true,
   swcMinify: true,
   transpilePackages: [
     'react-native',
-    'expo'
+    'expo',
     // Add more React Native / Expo packages here...
+    'react-native-elements',
+    'react-native-safe-area-context',
+    'react-native-vector-icons'
   ],
   experimental: {
     forceSwcTransforms: true

@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "React Native + Next.js",
-    "slug": "reactnative-nextjs-template",
     "version": "0.3.0",
+    "slug": "reactnative-nextjs-template",
+    "name": "React Native + Next.js",
     "orientation": "portrait",
     "icon": "./public/icon.png",
     "userInterfaceStyle": "light",

@@ -26,6 +26,16 @@
     "new:n": "cp navigation/OnboardingStackNavigator.tsx navigation/NewStackNavigator.tsx; echo \"Now rename/move 'navigation/NewStackNavigator.tsx' to whatever you want.\"",
     "api": "eval $(grep '^SUPABASE_URL' .env.local) && eval $(grep '^SUPABASE_API_KEY' .env.local) && npx openapi-typescript@5.4.0 ${SUPABASE_URL}/rest/v1/?apikey=${SUPABASE_API_KEY} --output types/supabase.ts"
   },
+  "ts-standard": {
+    "ignore": [
+      "next-env.d.ts",
+      "types/*"
+    ],
+    "globals": [
+      "expect",
+      "it"
+    ]
+  },
   "dependencies": {
     "expo": "~48.0.10",
     "expo-status-bar": "~1.4.4",
