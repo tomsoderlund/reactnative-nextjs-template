@@ -4,10 +4,10 @@
     "slug": "reactnative-nextjs-template",
     "name": "React Native + Next.js",
     "orientation": "portrait",
-    "icon": "./public/icon.png",
+    "icon": "./public/app-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./public/splash.png",
+      "image": "./public/app-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
