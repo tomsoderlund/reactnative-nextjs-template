@@ -2,7 +2,11 @@ import React, { useRef, useState } from 'react'
 import { StyleSheet, View, Button } from 'react-native'
 import { Video } from 'expo-av'
 
-const VideoPlayer = ({ videoUrl }) => {
+interface VideoPlayerProps {
+  videoUrl: string
+}
+
+const VideoPlayer = ({ videoUrl }: VideoPlayerProps): React.ReactElement => {
   const video = useRef(null)
   const [status, setStatus] = useState({})
   return (
@@ -18,8 +22,8 @@ const VideoPlayer = ({ videoUrl }) => {
       />
       <View style={styles.extraMargin}>
         <Button
-          title={status.isPlaying ? 'Pause' : 'Play'}
-          onPress={() => status.isPlaying ? video.current.pauseAsync() : video.current.playAsync()}
+          title={status.isPlaying === true ? 'Pause' : 'Play'}
+          onPress={() => status.isPlaying === true ? video.current.pauseAsync() : video.current.playAsync()}
         />
       </View>
     </>

@@ -1,12 +1,21 @@
 import React from 'react'
 import { StyleSheet, Text } from 'react-native'
+import type { GetStaticPropsContext, GetStaticPropsResult } from 'next'
+import { ParsedUrlQuery } from 'querystring'
 
 import { H1 } from '../components/webElements'
 // import VideoPlayer from '../components/VideoPlayer'
 
 import { config } from '../config/config'
 
-export default function StartPage ({ serverValue }) {
+interface StartPageParams extends ParsedUrlQuery {
+}
+
+interface StartPageProps {
+  serverValue: number
+}
+
+export default function StartPage ({ serverValue }: StartPageProps): React.ReactElement {
   return (
     <>
       <H1 style={styles.h1}>Heading H1</H1>
@@ -31,7 +40,7 @@ const styles = StyleSheet.create({
   }
 })
 
-export async function getStaticProps ({ params, locale = 'en' }) {
+export async function getStaticProps ({ locale }: GetStaticPropsContext<StartPageParams>): Promise<GetStaticPropsResult<StartPageProps>> {
   return {
     props: {
       serverValue: 12345
