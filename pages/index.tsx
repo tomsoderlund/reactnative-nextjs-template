@@ -20,8 +20,12 @@ export default function StartPage ({ serverValue }: StartPageProps): React.React
 
   useEffect(() => {
     async function fetchDataFromApi (): Promise<void> {
-      const data = await makeRestRequest('GET', 'test')
-      setDataFromApi(data.message)
+      try {
+        const data = await makeRestRequest('GET', 'test')
+        setDataFromApi(data.message)
+      } catch (err) {
+        console.warn('Could not get data from /api/test', err)
+      }
     }
     void fetchDataFromApi()
   }, [])
@@ -32,7 +36,7 @@ export default function StartPage ({ serverValue }: StartPageProps): React.React
       <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
       <Text style={styles.text}>serverValue (Next.js getStaticProps): {serverValue}</Text>
-      <Text style={styles.text}>Data from <code>/api/test</code>: “{dataFromApi}”</Text>
+      <Text style={styles.text}>Data from /api/test: “{dataFromApi}”</Text>
     </>
   )
 }
