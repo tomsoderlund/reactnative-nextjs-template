@@ -10,15 +10,17 @@
 
 _Note: this is my v5 boilerplate for React apps. See also my [Next.js + Firebase boilerplate](https://github.com/tomsoderlund/nextjs-pwa-firebase-boilerplate)._
 
-## Support this project
-
-Did you or your company find `reactnative-nextjs-template` useful? Please consider giving a small donation, it helps me spend more time on open-source projects:
-
-[![Support Tom on Ko-Fi.com](https://www.tomsoderlund.com/ko-fi_tomsoderlund_50.png)](https://ko-fi.com/tomsoderlund)
-
 ## Why is this awesome?
 
 This allows you to build _both_ a native app for [iOS/Android/Windows/macOS/etc](https://reactnative.dev/docs/out-of-tree-platforms), as well as an SEO-optimized web app _from same codebase_.
+
+### Use cases
+
+- You want a the **same user experience** in a native app and on the web.
+- You want a native app and also a **separate website** that share some code.
+- You want a **native app and an API**, powered by Next.js and Vercel serverless functions, **in the same repository**.
+
+## Todo list
 
 - [X] Server-side rendering (SSR)
 - [X] SEO: Semantic tags e.g. H1, H2, H3
@@ -35,6 +37,12 @@ This allows you to build _both_ a native app for [iOS/Android/Windows/macOS/etc]
 See [**reactnative-nextjs-template** running on Vercel here](https://reactnative-nextjs-template.vercel.app/).
 
 ![reactnative-nextjs-template demo on phone](docs/demo.jpg)
+
+## Support this project
+
+Did you or your company find `reactnative-nextjs-template` useful? Please consider giving a small donation, it helps me spend more time on open-source projects:
+
+[![Support Tom on Ko-Fi.com](https://www.tomsoderlund.com/ko-fi_tomsoderlund_50.png)](https://ko-fi.com/tomsoderlund)
 
 ## Deploying
 
