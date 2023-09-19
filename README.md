@@ -78,7 +78,7 @@ In production:
 
 ### Change app name
 
-Do search/replace for “reactnative-nextjs-template” to something else.
+Do search/replace for `reactnativenextjstemplate` to something else. Avoid hyphens/underscores because of iOS/Android bundle names.
 
 Change name in `public/manifest.json`
 

@@ -1,7 +1,7 @@
 {
   "expo": {
     "version": "0.3.0",
-    "slug": "reactnative-nextjs-template",
+    "slug": "reactnativenextjstemplate",
     "name": "React Native + Next.js",
     "orientation": "portrait",
     "icon": "./public/app-icon.png",
@@ -15,14 +15,14 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "com.tomorroworld.reactnative-nextjs-template",
+      "bundleIdentifier": "com.tomorroworld.reactnativenextjstemplate",
       "supportsTablet": true,
       "config": {
         "usesNonExemptEncryption": false
       }
     },
     "android": {
-      "package": "com.tomorroworld.reactnative-nextjs-template",
+      "package": "com.tomorroworld.reactnativenextjstemplate",
       "versionCode": 1000003000,
       "permissions": [
       ],

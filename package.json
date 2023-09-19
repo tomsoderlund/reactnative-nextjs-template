@@ -1,5 +1,5 @@
 {
-  "name": "reactnative-nextjs-template",
+  "name": "reactnativenextjstemplate",
   "description": "Build native apps (iOS/Android/Windows/macOS) and an SEO-optimized web app from the same React codebase",
   "license": "ISC",
   "main": "node_modules/expo/AppEntry.js",
