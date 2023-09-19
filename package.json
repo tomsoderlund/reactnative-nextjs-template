@@ -4,7 +4,7 @@
   "license": "ISC",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "upgrade-expo": "yarn global add expo-cli; yarn global add eas-cli; expo-cli upgrade; expo doctor --fix-dependencies",
+    "upgrade-expo": "yarn global add eas-cli; npx expo install --fix; npx expo-doctor",
     "dev": "yarn start",
     "dev:next": "next dev --port 3005",
     "start": "expo start --port 19005",
