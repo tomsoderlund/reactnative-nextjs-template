@@ -56,8 +56,7 @@ export const completeConfig: AllConfigurations = {
 
   development: {
     appUrl: `http://localhost:${serverPort}/`,
-    apiBaseUrl: `http://localhost:${serverPort}/api/`
-    // apiBaseUrl: 'http://192.168.50.168:3005/api/'
+    // apiBaseUrl: 'http://192.168.50.168:3005/api/' // Can’t use 'localhost' here because it’s an app
   },
 
   production: {
