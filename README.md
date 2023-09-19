@@ -35,7 +35,7 @@ This allows you to build _both_ a native app for [iOS/Android/Windows/macOS/etc]
 
 ## Demo
 
-See [**reactnative-nextjs-template** running on Vercel here](https://reactnative-nextjs-template.vercel.app/).
+See [**reactnative-nextjs-template** running on Vercel here](https://reactnativenextjstemplate.vercel.app/).
 
 ![reactnative-nextjs-template demo on phone](docs/demo.jpg)
 
