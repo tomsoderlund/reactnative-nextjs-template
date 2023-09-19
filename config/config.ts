@@ -4,10 +4,9 @@ import appJsonRoot from '../app.json'
 const { expo: appJson } = appJsonRoot
 
 // Change this to use API running on localhost:
-const DEFAULT_ENVIRONMENT = 'default' // 'development'
+const DEFAULT_ENVIRONMENT = __DEV__ ? 'development' : 'default'
+const SERVER_URL = 'https://reactnativenextjstemplate.vercel.app/'
 const serverPort = parseInt(process.env.PORT ?? '3005')
-
-const SERVER_URL = 'https://myapp.vercel.app/'
 
 interface EnvironmentConfiguration {
   appSlug: string
@@ -56,7 +55,8 @@ export const completeConfig: AllConfigurations = {
   },
 
   development: {
-    appUrl: `http://localhost:${serverPort}/`
+    appUrl: `http://localhost:${serverPort}/`,
+    apiBaseUrl: `http://localhost:${serverPort}/api/`
     // apiBaseUrl: 'http://192.168.50.168:3005/api/'
   },
 

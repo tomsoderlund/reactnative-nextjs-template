@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text } from 'react-native'
 import type { GetStaticPropsContext, GetStaticPropsResult } from 'next'
 import { ParsedUrlQuery } from 'querystring'
 
+import { config } from '../config/config'
+import makeRestRequest from '../lib/makeRestRequest'
 import { H1 } from '../components/webElements'
 // import VideoPlayer from '../components/VideoPlayer'
-
-import { config } from '../config/config'
 
 interface StartPageParams extends ParsedUrlQuery {
 }
@@ -16,12 +16,23 @@ interface StartPageProps extends PageMetaProps {
 }
 
 export default function StartPage ({ serverValue }: StartPageProps): React.ReactElement {
+  const [dataFromApi, setDataFromApi] = useState('')
+
+  useEffect(() => {
+    async function fetchDataFromApi (): Promise<void> {
+      const data = await makeRestRequest('GET', 'test')
+      setDataFromApi(data.message)
+    }
+    void fetchDataFromApi()
+  }, [])
+
   return (
     <>
       <H1 style={styles.h1}>Heading H1</H1>
       <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
       <Text style={styles.text}>serverValue (Next.js getStaticProps): {serverValue}</Text>
+      <Text style={styles.text}>Data from <code>/api/test</code>: “{dataFromApi}”</Text>
     </>
   )
 }

@@ -26,11 +26,12 @@ This allows you to build _both_ a native app for [iOS/Android/Windows/macOS/etc]
 - [X] SEO: Semantic tags e.g. H1, H2, H3
 - [X] SEO: Page metadata support
 - [X] Header (from `react-native-elements`)
+- [X] Video player
+- [x] Built-in REST API (`GET /api/test`)
 - [ ] Navigation
 - [ ] Flexible CSS solution
 - [ ] Font support
 - [ ] SVG support
-- [X] Video player
 
 ## Demo
 
