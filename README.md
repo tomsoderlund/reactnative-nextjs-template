@@ -58,25 +58,26 @@ Setup and deploy your own project using this template with [Vercel](https://verc
 Clone this repository:
 
     git clone https://github.com/tomsoderlund/reactnative-nextjs-template.git [MY_APP]
+    
+    cd [MY_APP]
 
-Remove the .git folder since you want to create a new repository
+Remove the `.git` folder since you want to create a new repository
 
     rm -rf .git
 
 Install dependencies:
 
-    cd [MY_APP]
     yarn  # or npm install
 
 Start it in Next.js/web mode by:
 
-    yarn dev
+    yarn dev:next
 
 …then navigate to `http://localhost:3005/`
 
 Start Expo for native apps:
 
-	yarn dev:native
+	yarn dev
 
 In production:
 
