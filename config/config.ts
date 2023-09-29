@@ -22,6 +22,10 @@ interface EnvironmentConfiguration {
   apiBaseUrl?: string
 
   debug?: Record<string, boolean>
+
+  // 3rd party services:
+  mixpanelToken?: string
+  sentryDsn?: string
 }
 
 interface AllConfigurations {
@@ -55,11 +59,12 @@ export const completeConfig: AllConfigurations = {
   },
 
   development: {
-    appUrl: `http://localhost:${serverPort}/`,
+    appUrl: `http://localhost:${serverPort}/`
     // apiBaseUrl: 'http://192.168.50.168:3005/api/' // Can’t use 'localhost' here because it’s an app
   },
 
   production: {
+    // mixpanelToken: ''
   }
 
 }
