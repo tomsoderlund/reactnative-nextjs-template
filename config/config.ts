@@ -24,7 +24,7 @@ interface EnvironmentConfiguration {
   debug?: Record<string, boolean>
 
   // 3rd party services:
-  mixpanelToken?: string
+  mixpanelProjectToken?: string
   sentryDsn?: string
 }
 
@@ -64,7 +64,7 @@ export const completeConfig: AllConfigurations = {
   },
 
   production: {
-    // mixpanelToken: ''
+    // mixpanelProjectToken: ''
   }
 
 }

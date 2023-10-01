@@ -42,7 +42,7 @@ interface AnalyticsReturnProps {
 const AnalyticsContext = createContext<Partial<AnalyticsReturnProps>>({})
 
 export const AnalyticsContextProvider = (props: AnalyticsInputProps): React.ReactElement => {
-  const mixpanel = new ExpoMixpanelAnalytics(config.mixpanelToken ?? '')
+  const mixpanel = new ExpoMixpanelAnalytics(config.mixpanelProjectToken ?? '')
 
   const uniqueDeviceID = useUniqueDeviceID()
 
