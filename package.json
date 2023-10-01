@@ -46,6 +46,7 @@
     "react-native": "0.72.4",
     "react-native-svg": "13.9.0",
     "react-native-svg-transformer": "^1.0.0",
+    "react-native-toast-notifications": "^3.4.0",
     "react-native-web": "~0.19.6"
   },
   "devDependencies": {
