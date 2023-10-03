@@ -1,6 +1,6 @@
 {
   "expo": {
-    "version": "0.3.0",
+    "version": "0.1.0",
     "slug": "reactnativenextjstemplate",
     "name": "React Native + Next.js",
     "orientation": "portrait",
@@ -23,7 +23,7 @@
     },
     "android": {
       "package": "com.tomorroworld.reactnativenextjstemplate",
-      "versionCode": 1000003000,
+      "versionCode": 1000001000,
       "permissions": [
       ],
       "adaptiveIcon": {
