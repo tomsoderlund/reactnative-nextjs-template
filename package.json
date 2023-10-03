@@ -39,6 +39,7 @@
   "dependencies": {
     "@expo/webpack-config": "^19.0.0",
     "expo": "^49.0.0",
+    "expo-build-properties": "~0.8.3",
     "expo-status-bar": "~1.6.0",
     "next": "^13.2.4",
     "react": "18.2.0",
