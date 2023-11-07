@@ -36,7 +36,7 @@ jobs:
           command: eas update --auto
 
       - name: 🛠️ Build app
-        run: EAS_BUILD_AUTOCOMMIT=1 eas build --non-interactive --platform android
+        run: EAS_BUILD_AUTOCOMMIT=1 eas build --non-interactive --profile production --platform android
 
       - name: 🚚 Submit app to TestFlight
         run: eas submit --latest --platform android

@@ -1,6 +1,7 @@
 {
   "expo": {
     "version": "0.1.0",
+    "runtimeVersion": "0.1.0",
     "slug": "reactnativenextjstemplate",
     "name": "React Native + Next.js",
     "orientation": "portrait",
@@ -24,8 +25,7 @@
     "android": {
       "package": "com.tomorroworld.reactnativenextjstemplate",
       "versionCode": 1000001000,
-      "permissions": [
-      ],
+      "permissions": [],
       "adaptiveIcon": {
         "foregroundImage": "./public/app-icon-adaptive.png",
         "backgroundColor": "#ffffff"
@@ -43,6 +43,14 @@
           }
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3073dfd4-4c5c-46d9-bfcb-169f6e8b2c37"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/3073dfd4-4c5c-46d9-bfcb-169f6e8b2c37"
+    }
   }
 }

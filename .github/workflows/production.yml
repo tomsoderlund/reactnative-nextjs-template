@@ -36,7 +36,7 @@ jobs:
           command: eas update --auto
 
       - name: 🛠️ Build app
-        run: eas build --non-interactive --platform ios
+        run: eas build --non-interactive --profile production --platform ios
 
       - name: 🚚 Submit app to TestFlight
         run: eas submit --latest --platform ios
