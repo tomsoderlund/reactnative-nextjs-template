@@ -16,9 +16,9 @@ This allows you to build _both_ a native app for [iOS/Android/Windows/macOS/etc]
 
 ### Use cases
 
-- You want a the **same user experience** in a native app and on the web.
-- You want a native app and also a **separate website** that share some code.
-- You want a **native app and an API**, powered by Next.js and Vercel serverless functions, **in the same repository**.
+- You want a **same user experience** in a native app and on the web.
+- You want a **shared codebase** between a native app and a separate website.
+- You want a **shared repository** for native app and an API, powered by Next.js and Vercel serverless functions.
 
 ## Todo list
 
